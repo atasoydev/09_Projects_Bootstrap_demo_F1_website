@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #f8f9fa;
+  background: #050e2d;
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+  font-family: "Outfit", sans-serif;
+}
+:root {
+  --rb-navy: #0a1e5e;
+  --rb-dark-navy: #050e2d;
+  --rb-red: #e51a31;
+  --rb-yellow: #f4c114;
+}
+.bg-navy {
+  background-color: var(--rb-navy);
+}
+.bg-dark-navy {
+  background-color: var(--rb-dark-navy);
+}
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.text-navy {
+  color: var(--rb-navy);
+}
+.text-yollow {
+  color: var(--rb-yellow);
+}
+.text-red {
+  color: var(--rb-red);
+}
+.hero-section {
+    min-height: 100vh;
+    background-image: url(images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+     background-attachment: fixed ; /* ! Parallax effect */
+     position: relative;
+}
+
+.btn-red {
+    border-width: 2px;
+    transition: all 0.2s;
+    background: var(--rb-red);
+    border-color: var(--rb-red);
+    color: #ffffff;
+
+}
+.btn-outline-light {
+    background: transparent;
+    border-color: #f8f9fa;
+    color: #f8f9fa;
+    border-width: 2px;
+    transition: all 0.2s;
+}
+.btn-outline-light:hover {
+    background: #ffff;
+    color: var(--rb-navy);
+}
+.btn-red:hover {
+    background: #c01428;
+}
+
+.hero-overlay {
+    background: linear-gradient(to right, rgba(5, 14, 45, 0.95) 0%,
+    rgba(5, 14, 45, 0.6) 50%,
+    rgba(5, 14, 45, 0.1) 100% );
+    position: absolute;
+    inset: 0;
+}

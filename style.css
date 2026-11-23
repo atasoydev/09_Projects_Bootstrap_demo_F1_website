@@ -41,41 +41,52 @@ h6,
   color: var(--rb-red);
 }
 .hero-section {
-    min-height: 100vh;
-    background-image: url(images/hero.jpg);
-    background-size: cover;
-    background-position: center;
-     background-attachment: fixed ; /* ! Parallax effect */
-     position: relative;
+  min-height: 100vh;
+  background-image: url(images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* ! Parallax effect */
+  position: relative;
 }
 
 .btn-red {
-    border-width: 2px;
-    transition: all 0.2s;
-    background: var(--rb-red);
-    border-color: var(--rb-red);
-    color: #ffffff;
-
+  border-width: 2px;
+  transition: all 0.2s;
+  background: var(--rb-red);
+  border-color: var(--rb-red);
+  color: #ffffff;
 }
 .btn-outline-light {
-    background: transparent;
-    border-color: #f8f9fa;
-    color: #f8f9fa;
-    border-width: 2px;
-    transition: all 0.2s;
+  background: transparent;
+  border-color: #f8f9fa;
+  color: #f8f9fa;
+  border-width: 2px;
+  transition: all 0.2s;
 }
 .btn-outline-light:hover {
-    background: #ffff;
-    color: var(--rb-navy);
+  background: #ffff;
+  color: var(--rb-navy);
 }
 .btn-red:hover {
-    background: #c01428;
+  background: #c01428;
 }
 
 .hero-overlay {
-    background: linear-gradient(to right, rgba(5, 14, 45, 0.95) 0%,
+  background: linear-gradient(
+    to right,
+    rgba(5, 14, 45, 0.95) 0%,
     rgba(5, 14, 45, 0.6) 50%,
-    rgba(5, 14, 45, 0.1) 100% );
-    position: absolute;
-    inset: 0;
+    rgba(5, 14, 45, 0.1) 100%
+  );
+  position: absolute;
+  inset: 0;
+}
+.fw-black {
+  font-weight: 900;
+}
+.spacing {
+  padding-block: 6rem;
+}
+.tracking-wide {
+  letter-spacing: 0.1em;
 }
